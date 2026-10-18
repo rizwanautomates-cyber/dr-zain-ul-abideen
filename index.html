@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Dr Muhammad Zain Ul Abideen — Pulmonologist & Chest Specialist in Gujrat. Asthma, COPD, TB, chronic cough & respiratory diseases. Bhimber Road, Gujrat. Call 0345 0731166."/>
+<title>Dr Muhammad Zain Ul Abideen — Pulmonologist & Chest Specialist | Gujrat</title>
+<link rel="icon" type="image/png" href="logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --navy:#0a1628; --navy-2:#0e1f38; --navy-3:#13294a;
+  --teal:#14b8a6; --teal-deep:#0d9488; --teal-soft:rgba(20,184,166,.12);
+  --orange:#fb923c; --orange-deep:#f97316; --orange-soft:rgba(251,146,60,.12);
+  --text:#f2f7fb; --muted:#a9bdd2; --line:rgba(255,255,255,.09);
+  --card:#101f36; --radius:20px;
+  --shadow:0 24px 70px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--navy);color:var(--text);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:Fraunces,Manrope,serif}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1140px,92%);margin:0 auto}
+section{padding:96px 0;position:relative}
+/* ---------- nav ---------- */
+nav{position:fixed;inset:0 0 auto 0;z-index:100;backdrop-filter:blur(14px);background:rgba(10,22,40,.72);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:14px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:46px;border-radius:12px;background:#fff;padding:4px;box-shadow:0 6px 18px rgba(20,184,166,.25)}
+.brand b{font-size:17px;letter-spacing:.2px;display:block;line-height:1.25}
+.brand small{color:var(--muted);font-size:12px;letter-spacing:.4px}
+.nav-links{margin-left:auto;display:flex;gap:28px;font-weight:600;font-size:14.5px}
+.nav-links a{color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;border-radius:999px;padding:14px 28px;font-size:15px;transition:transform .18s,box-shadow .18s;cursor:pointer;border:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-call{background:linear-gradient(135deg,var(--orange),var(--orange-deep));color:#231303;box-shadow:0 12px 30px rgba(249,115,22,.35)}
+.btn-wa{background:linear-gradient(135deg,#2fe07a,#1eb85a);color:#062b16;box-shadow:0 12px 30px rgba(46,224,122,.28)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--line)}
+.btn-sm{padding:10px 20px;font-size:13.5px}
+/* ---------- hero ---------- */
+.hero{padding:170px 0 90px;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;pointer-events:none}
+.orb-1{width:520px;height:520px;background:radial-gradient(circle,rgba(20,184,166,.35),transparent 65%);top:-120px;right:-120px}
+.orb-2{width:460px;height:460px;background:radial-gradient(circle,rgba(249,115,22,.28),transparent 65%);bottom:-160px;left:-140px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative}
+.badge{display:inline-flex;align-items:center;gap:10px;background:var(--teal-soft);border:1px solid rgba(20,184,166,.35);color:var(--teal);font-weight:700;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;padding:9px 18px;border-radius:999px;margin-bottom:26px}
+.hero h1{font-size:clamp(40px,5.4vw,66px);line-height:1.08;letter-spacing:-.5px;margin-bottom:18px}
+.hero h1 .grad{background:linear-gradient(100deg,var(--teal),#5eead4 45%,var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:var(--muted);font-size:18px;max-width:520px;margin-bottom:34px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.hero-points{display:flex;gap:26px;flex-wrap:wrap}
+.hero-points div{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;font-weight:600}
+.hero-points svg{width:20px;height:20px;flex:none}
+.hero-photo{position:relative;justify-self:center}
+.hero-photo .frame{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);max-width:420px}
+.hero-photo .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,22,40,.55));pointer-events:none}
+.hero-photo img{width:100%;height:520px;object-fit:cover;object-position:top}
+.float-card{position:absolute;background:rgba(16,31,54,.92);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;animation:float 5s ease-in-out infinite}
+.float-card .ic{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.float-card b{display:block;font-size:14px}
+.float-card small{color:var(--muted);font-size:12.5px}
+.fc-1{top:36px;left:-70px}
+.fc-2{bottom:44px;right:-56px;animation-delay:2.5s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+/* ---------- strip ---------- */
+.strip{background:linear-gradient(90deg,var(--navy-2),var(--navy-3));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.strip-item{display:flex;gap:14px;align-items:center}
+.strip-item .ic{width:48px;height:48px;border-radius:14px;background:var(--teal-soft);border:1px solid rgba(20,184,166,.3);display:flex;align-items:center;justify-content:center;flex:none}
+.strip-item b{display:block;font-size:15px}
+.strip-item small{color:var(--muted);font-size:13px}
+/* ---------- sections ---------- */
+.kicker{color:var(--orange);font-weight:800;font-size:13px;letter-spacing:2.2px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:34px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--orange),var(--teal))}
+h2.sec{font-size:clamp(30px,3.6vw,44px);line-height:1.15;letter-spacing:-.4px;margin-bottom:18px}
+.sec-sub{color:var(--muted);font-size:17px;max-width:640px;margin-bottom:50px}
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:44px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.about-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--orange))}
+.about-card p{color:var(--muted);font-size:16.5px;margin-bottom:18px}
+.check{display:flex;gap:12px;align-items:flex-start;margin:14px 0;font-weight:600;font-size:15.5px}
+.check .tick{width:26px;height:26px;border-radius:50%;background:var(--teal-soft);border:1px solid rgba(20,184,166,.4);color:var(--teal);display:flex;align-items:center;justify-content:center;flex:none;font-size:14px;font-weight:800}
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-8px);border-color:rgba(20,184,166,.45);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.svc .ic{width:60px;height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;background:linear-gradient(135deg,var(--teal-soft),var(--orange-soft));border:1px solid rgba(20,184,166,.3)}
+.svc h3{font-size:20px;margin-bottom:10px;font-family:Manrope;font-weight:800}
+.svc p{color:var(--muted);font-size:14.5px}
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:40px 36px;box-shadow:var(--shadow)}
+.panel h3{font-size:22px;margin-bottom:24px;font-family:Manrope;font-weight:800;display:flex;align-items:center;gap:12px}
+.hrow{display:flex;justify-content:space-between;align-items:center;padding:14px 4px;border-bottom:1px dashed rgba(255,255,255,.12);font-size:15.5px}
+.hrow:last-child{border-bottom:none}
+.hrow .day{font-weight:700}
+.hrow .time{color:var(--teal);font-weight:700}
+.hrow.closed .time{color:var(--muted);font-weight:600}
+.info-row{display:flex;gap:16px;align-items:flex-start;margin:18px 0}
+.info-row .ic{width:46px;height:46px;border-radius:14px;background:var(--orange-soft);border:1px solid rgba(251,146,60,.35);display:flex;align-items:center;justify-content:center;flex:none}
+.info-row b{display:block;font-size:15.5px}
+.info-row small,.info-row a.small{color:var(--muted);font-size:14px}
+/* cta banner */
+.cta-band{background:linear-gradient(120deg,#0d3b36,#0a1628 60%),radial-gradient(circle at 80% 20%,rgba(249,115,22,.22),transparent 55%);border:1px solid rgba(20,184,166,.3);border-radius:28px;padding:64px 56px;text-align:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.cta-band h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:14px}
+.cta-band p{color:var(--muted);font-size:17px;max-width:560px;margin:0 auto 32px}
+.cta-band .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* footer */
+footer{border-top:1px solid var(--line);padding:44px 0;background:#081222}
+.foot{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.foot img{width:40px;height:40px;border-radius:10px;background:#fff;padding:3px}
+.foot small{color:var(--muted);display:block}
+.foot .right{margin-left:auto;color:var(--muted);font-size:13px}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+/* responsive */
+@media(max-width:960px){
+  .hero-grid,.about-grid,.visit-grid{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .strip-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .fc-1{left:8px}.fc-2{right:8px}
+  .hero{padding-top:140px}
+}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}section{padding:70px 0}.cta-band{padding:44px 26px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="Dr Zain Ul Abideen — lungs logo"/>
+      <span><b>Dr Muhammad Zain Ul Abideen</b><small>PULMONOLOGIST &amp; CHEST SPECIALIST</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#visit">Visit</a><a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-call btn-sm" style="margin-left:18px" href="tel:+923450731166">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge rv">Pulmonologist &amp; Chest Specialist</span>
+      <h1 class="rv">Dr Muhammad<br/><span class="grad">Zain Ul Abideen</span></h1>
+      <p class="lead rv">Specialized care for asthma, COPD, tuberculosis, chronic cough and all respiratory diseases — in Gujrat.</p>
+      <div class="hero-ctas rv">
+        <a class="btn btn-call" href="tel:+923450731166">Call 0345 0731166</a>
+        <a class="btn btn-wa" href="https://wa.me/923450731166" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="hero-points rv">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Mon–Thu &amp; Sat · 3–7 PM</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bhimber Road, Gujrat</div>
+      </div>
+    </div>
+    <div class="hero-photo rv">
+      <div class="frame"><img src="doctor.jpg" alt="Dr Muhammad Zain Ul Abideen"/></div>
+      <div class="float-card fc-1">
+        <div class="ic" style="background:var(--teal-soft);border:1px solid rgba(20,184,166,.4)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div><b>Chest Specialist</b><small>Asthma · COPD · TB</small></div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="ic" style="background:var(--orange-soft);border:1px solid rgba(251,146,60,.4)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div><b>Evening Clinic</b><small>3:00 – 7:00 PM</small></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-item rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M12 3v10m0 0l-4-4m4 4l4-4"/><path d="M4 17c2 3 5 4 8 4s6-1 8-4"/></svg></div><div><b>Breathe Easy</b><small>Complete respiratory care</small></div></div>
+    <div class="strip-item rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><b>Gujrat Based</b><small>Bhimber Road clinic</small></div></div>
+    <div class="strip-item rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><b>5 Days a Week</b><small>Mon–Thu &amp; Sat, 3–7 PM</small></div></div>
+    <div class="strip-item rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div><div><b>Direct Booking</b><small>0345 0731166</small></div></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <div class="kicker">About the Doctor</div>
+      <h2 class="sec">Dedicated to healthy<br/>lungs &amp; easy breathing</h2>
+      <p class="sec-sub">Respiratory problems affect every part of daily life — from sleep to work. Dr Zain Ul Abideen focuses exclusively on chest and lung health, offering careful diagnosis and modern treatment.</p>
+      <a class="btn btn-ghost" href="#visit">Plan Your Visit</a>
+    </div>
+    <div class="about-card rv">
+      <p>Dr Muhammad Zain Ul Abideen is a Pulmonologist &amp; Chest Specialist practicing in Gujrat, helping patients with asthma, COPD, tuberculosis, chronic cough and a wide range of respiratory diseases.</p>
+      <div class="check"><span class="tick">✓</span>Focused expertise in lung &amp; chest diseases</div>
+      <div class="check"><span class="tick">✓</span>Modern approach to asthma &amp; COPD management</div>
+      <div class="check"><span class="tick">✓</span>TB diagnosis, treatment &amp; follow-up care</div>
+      <div class="check"><span class="tick">✓</span>Clear guidance in every consultation</div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:linear-gradient(180deg,transparent,rgba(14,31,56,.6),transparent)">
+  <div class="wrap">
+    <div class="rv"><div class="kicker">Services</div>
+      <h2 class="sec">Conditions treated</h2>
+      <p class="sec-sub">Comprehensive diagnosis and treatment for diseases of the lungs and airways.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M12 3v10m0 0l-4-4m4 4l4-4"/><path d="M4 17c2 3 5 4 8 4s6-1 8-4"/></svg></div><h3>Asthma</h3><p>Diagnosis, inhaler therapy guidance and long-term asthma control plans for all ages.</p></div>
+      <div class="svc rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div><h3>COPD</h3><p>Management of chronic bronchitis and emphysema to improve breathing and daily activity.</p></div>
+      <div class="svc rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7z"/><path d="M12 9v5m-3-2h6"/></svg></div><h3>Tuberculosis (TB)</h3><p>Complete TB diagnosis, treatment supervision and follow-up care.</p></div>
+      <div class="svc rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M4 14c2-1 4-1 6 0s4 1 6 0 3-1 4 0"/><path d="M4 18c2-1 4-1 6 0s4 1 6 0 3-1 4 0"/><path d="M7 10c1.5-2 4-3 5-3s3.5 1 5 3"/></svg></div><h3>Chronic Cough</h3><p>Finding the real cause of persistent cough and treating it effectively.</p></div>
+      <div class="svc rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><path d="M9 10h6"/></svg></div><h3>Breathing Difficulty</h3><p>Evaluation of shortness of breath, wheezing and chest tightness.</p></div>
+      <div class="svc rv"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><h3>Respiratory Infections</h3><p>Care for pneumonia, bronchitis and recurring chest infections.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="rv"><div class="kicker">Visit the Clinic</div>
+      <h2 class="sec">Clinic hours &amp; location</h2>
+      <p class="sec-sub">Evening clinic, five days a week — walk in or call ahead for your appointment.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="panel rv">
+        <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Clinic Hours</h3>
+        <div class="hrow"><span class="day">Monday – Thursday</span><span class="time">3:00 – 7:00 PM</span></div>
+        <div class="hrow closed"><span class="day">Friday</span><span class="time">Closed</span></div>
+        <div class="hrow"><span class="day">Saturday</span><span class="time">3:00 – 7:00 PM</span></div>
+        <div class="hrow closed"><span class="day">Sunday</span><span class="time">Closed</span></div>
+      </div>
+      <div class="panel rv">
+        <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Find Us</h3>
+        <div class="info-row"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><b>Bhimber Road, Gujrat</b><small>Punjab, Pakistan</small></div></div>
+        <div class="info-row"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></div><div><b><a href="tel:+923450731166">0345 0731166</a></b><small>Call for appointments</small></div></div>
+        <div class="info-row"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-2 5-4 1 1-4z"/></svg></div><div><b><a class="small" href="https://www.facebook.com/profile.php?id=1367310586455775" target="_blank" rel="noopener">Facebook Page</a></b><small>Follow for health updates</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta-band rv">
+      <div class="kicker" style="justify-content:center">Book Appointment</div>
+      <h2>Breathing trouble?<br/>Don't wait.</h2>
+      <p>Call or WhatsApp now to book your consultation with Dr Muhammad Zain Ul Abideen.</p>
+      <div class="row">
+        <a class="btn btn-call" href="tel:+923450731166">Call 0345 0731166</a>
+        <a class="btn btn-wa" href="https://wa.me/923450731166" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <img src="logo.png" alt="logo"/>
+    <div><b>Dr Muhammad Zain Ul Abideen</b><small>Pulmonologist &amp; Chest Specialist — Gujrat</small></div>
+    <div class="right">Website by <b style="color:var(--text)">Social Ad Solutions</b></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
